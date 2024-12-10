@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Mono+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+#header {
+  background-color: rgb(231, 231, 231);
+}
+
+.header__content {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__img {
+  height: 40px;
+}
+
+.header__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  font-family: "Rubik Mono One", monospace;
+  color: rgb(45, 45, 45);
+}
+
+.header__lk {
+  color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+
+body {
+  background-color: #f6f7f9;
+}
+
+.main__content {
+  width: 1100px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__title {
+  font-size: 32px;
+  color: rgb(39, 39, 39);
+}
+
+.main__bank {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__card {
+  width: 312px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main__card:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.main__card-logo {
+  width: 36px;
+}
+
+.main__card-props {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main__card-props-balance {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main__card-props-type {
+  font-weight: 100;
+  color: gray;
+  font-size: 14px;
+}
+
+.main__card-props-cards {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.main__card-props-cards img {
+  width: 70px;
+}
+
+.main__cards-button {
+  background-color: #ffdd2d;
+  padding: 20px 0;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.main__cards-button:hover {
+  background-color: #ebc920;
+}
+
+.main__section {
+  width: 670px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#main__search {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(224, 224, 233);
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.section_block {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.section_block-title {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.section_block-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.section_input {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section_input-title {
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+}
+
+.section_input-input {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: rgb(226, 226, 226);
+}
+
+.section_input-button {
+  background-color: #ffdd2d;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.section_input-button:hover {
+  background-color: #ebc920;
+}
+
+.zavoz {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.zavoz_block {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden; /* Скрывает выходящие за границы элементы */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.zavoz_block:hover {
+  transform: translateY(-8px);
+}
+
+.zavoz-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Вписывает изображение, сохраняя пропорции */
+  border-radius: inherit; /* Унаследовать закругление от родителя */
+}
+
+.zavoz-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%; /* Высота градиента */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0)
+  ); /* Градиентная тень */
+  border-radius: inherit; /* Совпадает с закруглением блока */
+}
+
+.zavoz-text {
+  font-size: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  color: white;
+  z-index: 1; /* Устанавливает текст выше всех остальных слоев */
+}

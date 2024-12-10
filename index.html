@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Z-BANK</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <img class="header__img" src="files/logo.png" alt="" />
+          <span class="header__title">БАНК</span>
+        </div>
+        <div class="header__lk">Барындылдан</div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="main__content">
+        <h1 class="main__title">Доброго здравия</h1>
+        <div class="main__bank">
+          <div class="main__cards">
+            <div class="main__card">
+              <img class="main__card-logo" src="files/ruble.png" alt="" />
+              <div class="main__card-props">
+                <span
+                  class="main__card-props-balance"
+                  id="balance_balance"
+                ></span>
+                <span class="main__card-props-type">Z-карта super black</span>
+                <div class="main__card-props-cards">
+                  <img src="files/sberbank.svg" alt="" />
+                  <img src="files/tinkoff.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="main__card">
+              <img class="main__card-logo" src="files/ruble.png" alt="" />
+              <div class="main__card-props">
+                <span
+                  class="main__card-props-balance"
+                  id="balance_deposit"
+                ></span>
+                <span class="main__card-props-type"
+                  >Накопительный счёт z-black</span
+                >
+                <div class="main__card-props-cards">
+                  <img src="files/tinkoff.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="main__card">
+              <img class="main__card-logo" src="files/ruble.png" alt="" />
+              <div class="main__card-props">
+                <span class="main__card-props-balance">6354 бонусов</span>
+                <span class="main__card-props-type">Бонусы Oreshnik</span>
+              </div>
+            </div>
+
+            <button class="main__cards-button">Изменить</button>
+          </div>
+
+          <div class="main__section">
+            <div class="zavoz">
+              <div class="zavoz_block">
+                <img src="files/minion.png" alt="" class="zavoz-bg" />
+                <div class="zavoz-overlay"></div>
+                <span class="zavoz-text">Потратьте бонусы в Орешнике!</span>
+              </div>
+
+              <div class="zavoz_block">
+                <img src="files/itpro.jpg" alt="" class="zavoz-bg" />
+                <div class="zavoz-overlay"></div>
+                <span class="zavoz-text">Скидки 20% на курсы ITProgram!</span>
+              </div>
+
+              <div class="zavoz_block">
+                <img src="files/pandostat.png" alt="" class="zavoz-bg" />
+                <div class="zavoz-overlay"></div>
+                <span class="zavoz-text">Пандостат уже скоро!</span>
+              </div>
+              <div class="zavoz_block">
+                <img src="files/fastapi.jpg" alt="" class="zavoz-bg" />
+                <div class="zavoz-overlay"></div>
+                <span class="zavoz-text"
+                  >Грядёт семестровое страдание на питоне...</span
+                >
+              </div>
+              <div class="zavoz_block">
+                <img src="files/gopak.jpg" alt="" class="zavoz-bg" />
+                <div class="zavoz-overlay"></div>
+                <span class="zavoz-text"
+                  >НОВАЯ ФУНКЦИЯ Гопак() уже работает!</span
+                >
+              </div>
+            </div>
+
+            <div class="section_block">
+              <div class="section_block-title">Снять/пополнить баланс</div>
+              <div class="section_block-content">
+                <div class="section_input">
+                  <span class="section_input-title">Пополнить баланс</span>
+                  <input
+                    class="section_input-input"
+                    type="text"
+                    placeholder="Сумма пополнения баланса: "
+                    id="deposit_balance_input"
+                  />
+                  <button class="section_input-button" id="deposit">
+                    Пополнить
+                  </button>
+                </div>
+
+                <div class="section_input">
+                  <span class="section_input-title">Cнять с баланса</span>
+                  <input
+                    class="section_input-input"
+                    type="text"
+                    placeholder="Сумма снятия с баланса: "
+                    id="take_balance_input"
+                  />
+                  <button class="section_input-button" id="withdraw">
+                    Снять
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="section_block">
+              <div class="section_block-title">Снять/пополнить вклад</div>
+              <div class="section_block-content">
+                <div class="section_input">
+                  <span class="section_input-title">Пополнить вклад</span>
+                  <input
+                    class="section_input-input"
+                    type="text"
+                    placeholder="Сумма пополнения вклада: "
+                    id="deposit_deposit_input"
+                  />
+                  <button class="section_input-button" id="deposit_vklad">
+                    Пополнить
+                  </button>
+                </div>
+
+                <div class="section_input">
+                  <span class="section_input-title">Cнять с вклада</span>
+                  <input
+                    class="section_input-input"
+                    type="text"
+                    placeholder="Сумма снятия с вклада: "
+                    id="take_deposit_input"
+                  />
+                  <button class="section_input-button" id="withdraw_vklad">
+                    Снять
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
